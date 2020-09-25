@@ -2,15 +2,16 @@
     <h1> <%= eday %>   </h1>
  <div class="mainListDiv">
      <div class="list">
-            <ul>
+        
             <% for(var i=0;i<enewlist.length;i++){ %>
-                <li> <input type="checkbox"> <p> <%= enewlist[i] %> </p></li> 
+                
+              <div class="listele">  <input type="checkbox"> <p> <%= enewlist[i] %> </p> </div> 
                     <%  }  %>
-            </ul>
+
         </div>
     <div class="btnandtext">
         <form action="/" method="POST">
-            <input type="text" name="etx" class="ntext">
+            <input type="text" name="etx" class="ntext" placeholder="Type Here" autocomplete="off">
             <button class="btn" type="submit" name="subName" value="<%= eday %>" >+</button>
         </form>
     </div>

@@ -12,50 +12,53 @@ footer {
 h1{
     display: table;
     text-align: center;
-    color: #654ea3;
-    background-color: #ffffff;
+    color: rgb(255, 255, 255);
     margin: 5% auto 0px auto;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 2px;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 60px;
 
 }
-body {
-    background: #654ea3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2a3d66, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2a3d66, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+html {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     
 }
+.listele{
+        display: flex;
+        min-height: 70px;
+        align-items: center;
+        border-bottom: dashed 1px #8772c0;
+}
+
 .btn{
     border-radius: 50%;
-    background-color: blueviolet;
+    background-color: #302b63;
     color: white;
+    margin-top: 5px;
 }
 
 .mainListDiv {
     max-width: 400px;
     margin: 50px auto;
-    background: white;
+    background: #9d86df;
     border-radius: 5px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
 .list {
     min-height: 70px;
-    display: flex;
     align-items: center;
-    border-bottom: 1px solid #F1F1F1;
 }
-
-.list:last-child {
-    border-bottom: 0;
-  }
   
-  input:checked+p {
+input:checked+p {
     text-decoration: line-through;
-    text-decoration-color: #A683E3;
+    text-decoration-color: #0f0c29;
   }
   
 button {
@@ -63,10 +66,8 @@ button {
     width: 50px;
     border-radius: 50%;
     border-color: transparent;
-    background-color: #A683E3;
     color: #fff;
     font-size: 30px;
-    padding-bottom: 6px;
     border-width: 0;
   }
 
@@ -100,10 +101,57 @@ input[type="checkbox"] {
     margin: 0;
     padding: 20px;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 500;
     color: #00204a;
   }
 
-  li{
+
+  .header_main{
       display: flex;
+      margin: 0;
+      padding: 0;
+        background-color: transparent;
+        justify-content: space-between;
+        width: 100%;
   }
+
+  .header_heading {
+      color: #654ea3;
+      font-weight: 600;
+      padding: 20px;
+      background-color: transparent;
+      border-radius: 10px;
+      font-size: 20px;
+      min-height: 0;
+      width: 100%;
+      border-width: 0;
+      text-align: center;
+  }
+
+  .worklist {
+    background-color: transparent;
+    border-radius: 10px;
+    color: #654ea3;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 20px;
+    min-height: 0;
+    width: 100%;
+    border-width: 0;
+    text-align: center;
+  }
+
+  .worklist:hover {
+    color: #ffffff;
+  }
+
+  .header_heading:hover {
+    color: #ffffff;
+  }
+.headerform {
+    margin: 0;
+}
+
+::placeholder {
+    color: #654ea3;
+}
