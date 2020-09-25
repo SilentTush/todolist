@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> <%= eday %>   </h1>
+ <div class="mainListDiv">
+     <div class="list">
+            <ul>
+            <% for(var i=0;i<enewlist.length;i++){ %>
+                <li> <input type="checkbox"> <p> <%= enewlist[i] %> </p></li> 
+                    <%  }  %>
+            </ul>
+        </div>
+    <div class="btnandtext">
+        <form action="/" method="POST">
+            <input type="text" name="etx" class="ntext">
+            <button class="btn" type="submit" name="subName" value="<%= eday %>" >+</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
