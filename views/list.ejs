@@ -2,11 +2,9 @@
     <h1> <%= eday %>   </h1>
  <div class="mainListDiv">
      <div class="list">
-        
-            <% for(var i=0;i<enewlist.length;i++){ %>
-                
-              <div class="listele">  <input type="checkbox"> <p> <%= enewlist[i] %> </p> </div> 
-                    <%  }  %>
+                <% enewlist.forEach(element => { %>
+             <div class="listele">  <input type="checkbox"> <p> <%= element.name %> </p> </div> 
+                <% }) %>
 
         </div>
     <div class="btnandtext">
