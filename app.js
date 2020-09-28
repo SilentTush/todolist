@@ -4,7 +4,12 @@ const mongoose = require("mongoose");
 const app = express();
 const _ = require("lodash");
 
-mongoose.connect("mongodb+srv://SilentTush:tushkush123@todo.eerbn.mongodb.net/todolistDB", {useUnifiedTopology: 1,useNewUrlParser: 1,useFindAndModify: false})
+const dotenv = require("dotenv");
+dotenv.config();
+
+mongoUrl = process.env.urlxx;
+
+mongoose.connect(urlxx, {useUnifiedTopology: 1,useNewUrlParser: 1,useFindAndModify: false})
 // item schema here
 const itemSchema =  {
     name: String
