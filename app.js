@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 const _ = require("lodash");
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useUnifiedTopology: 1,useNewUrlParser: 1,useFindAndModify: false})
+mongoose.connect("mongodb+srv://SilentTush:tushkush123@todo.eerbn.mongodb.net/todolistDB", {useUnifiedTopology: 1,useNewUrlParser: 1,useFindAndModify: false})
 // item schema here
 const itemSchema =  {
     name: String
