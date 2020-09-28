@@ -9,7 +9,7 @@ dotenv.config();
 
 mongoUrl = process.env.urlxx;
 
-mongoose.connect(urlxx, {useUnifiedTopology: 1,useNewUrlParser: 1,useFindAndModify: false})
+mongoose.connect(mongoUrl, {useUnifiedTopology: 1,useNewUrlParser: 1,useFindAndModify: false})
 // item schema here
 const itemSchema =  {
     name: String
