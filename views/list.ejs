@@ -3,13 +3,18 @@
  <div class="mainListDiv">
      <div class="list">
                 <% enewlist.forEach(element => { %>
-             <div class="listele">  <input type="checkbox"> <p> <%= element.name %> </p> </div> 
+                    <form action="/delete" method="POST">
+             <div class="listele">  
+                 <input onChange="this.form.submit()" type="checkbox" name="itemTobeDeleted" value="<%= element._id %>"> </input>
+                <p> <%= element.name %> </p> </div> 
+                <input type="hidden" name="hidden_listName" value="<%= eday %>"></input></form>
+            </form>
                 <% }) %>
-
+            
         </div>
     <div class="btnandtext">
         <form action="/" method="POST">
-            <input type="text" name="etx" class="ntext" placeholder="Type Here" autocomplete="off">
+            <input type="text" name="newListInput" class="ntext" placeholder="Type Here" autocomplete="off">
             <button class="btn" type="submit" name="subName" value="<%= eday %>" >+</button>
         </form>
     </div>
