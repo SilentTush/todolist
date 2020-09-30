@@ -57,7 +57,7 @@ app.use(express.static("public/"));
 
 app.get("/", (req, res) => {
 	Item.find({}, (err, listitems) => {
-		if (listitems.length === 0) {
+		if (listitems=== 0) {
 			Item.insertMany([newitem1, newitem2, newitem3]);
 			res.render("/");
 		} else {
