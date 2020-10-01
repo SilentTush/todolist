@@ -31,15 +31,15 @@ const Item = mongoose.model("item", itemSchema);
 const List = mongoose.model("list", listSchema);
 // ----------------------------------------------default entries for every new page--------------------------------------------------------------
 const newitem1 = new Item({
-	name: "Hello",
+	name: "Hello User",
 });
 
 const newitem2 = new Item({
-	name: "Add new items by press +",
+	name: "Add new items by press (+)",
 });
 
 const newitem3 = new Item({
-	name: "delete by checking the checkbox",
+	name: "<<<<< Click here to delete",
 });
 
 const defaultitems = [newitem1, newitem2, newitem3];
